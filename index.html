@@ -3,43 +3,60 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/ls.svg" />
-  <link rel="stylesheet" href="/font/inter.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Join the Linux Society @ UNSW – connect with open-source enthusiasts, developers, and tech lovers through workshops, talks, and community events.">
+  
   <title>Linux Society UNSW</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preload" as="text" type="text/css" crossorigin
+    href="https://api.fontshare.com/v2/css?f[]=satoshi&display=swap" />
+  <link rel="preload" as="text" type="text/css" crossorigin
+    href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk&display=swap" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi&display=swap" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk&display=swap" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+  
+
+  <link rel="icon" type="image/svg+xml" href="/ls.svg" />
 </head>
 
 <body>
   <canvas id="gradient-canvas" data-transition-in></canvas>
   <main class="container">
-    <div class="corner-text">
+    <div class="arc-logo">
       <img src="/arc.png" alt="arc logo" width="40px">
     </div>
     <div class="content-container">
-      <p></p>
-      <h1>LINUX SOCIETY</h2>
-        <div class="content-list">
-          <a href="https://campus.hellorubric.com/?s=12591">
-            <h1>RUBRIC</h1>
-          </a>
-          <a href="https://discord.gg/7Tqz2bn8Gz">
-            <h1>DISCORD</h1>
-          </a>
-          <a href="https://github.com/linuxunsw">
-            <h1>GITHUB</h1>
-          </a>
-          <a href="https://www.instagram.com/linuxunsw/">
-            <h1>INSTAGRAM</h1>
-          </a>
-        </div>
-        <h3>&hearts; Join our community!</h3>
+      <h1>LINUX SOCIETY</h1>
+      <div class="content-list">
+        <a href="https://campus.hellorubric.com/?s=12591">
+          <h1>RUBRIC</h1>
+        </a>
+        <a href="https://discord.gg/7Tqz2bn8Gz">
+          <h1>DISCORD</h1>
+        </a>
+        <a href="https://github.com/linuxunsw">
+          <h1>GITHUB</h1>
+        </a>
+        <a href="https://www.instagram.com/linuxunsw/">
+          <h1>INSTAGRAM</h1>
+        </a>
+      </div>
+      <h3>&hearts; Join our community!</h3>
     </div>
     <div id="effect-container">
       <canvas id="aascii"></canvas>
     </div>
   </main>
+
+  <footer>
+    <p>$ linux society</p>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 

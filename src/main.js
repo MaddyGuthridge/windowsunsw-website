@@ -68,7 +68,7 @@ function init() {
   const font = new FontLoader().parse(interFont);
 
   // create text geometry using font
-  const geometry = new TextGeometry('LINSOC', {
+  const geometry = new TextGeometry('WINSOC', {
     font: font,
     size: 8, 
     depth: 2,
